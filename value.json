@@ -1,0 +1,129 @@
+{
+  "contacts": [
+    {
+      "addresses": [
+        {
+          "country": "country",
+          "country_code": "country_code",
+          "field": "ADDRESS_FIELD_UNSPECIFIED",
+          "line1": "address line 1",
+          "line2": "address line 2",
+          "locality": "locality",
+          "postal_code": "postal_code",
+          "region": "region",
+          "region_code": "region_code",
+          "zip_code": "zip_code",
+          "zip_four": "zip_four"
+        }
+      ],
+      "anniversary_date": "2022-08-05T17:30:35.849Z",
+      "birth_date": "2022-08-05T17:30:35.849Z",
+      "company": {
+        "company_name": "company_name",
+        "id": "company id"
+      },
+      "contact_type": "string",
+      "create_time": "2022-08-05T17:30:35.849Z",
+      "custom_fields": [
+        {
+          "id": 2,
+          "content": "Marketing Note"
+        },
+        {
+          "id": 4,
+          "content": "Age"
+        },
+        {
+          "id": 6,
+          "content": "Relationship"
+        },
+        {
+          "id": 8,
+          "content": "Occupation"
+        },
+        {
+          "id": 24,
+          "content": "2022-09-19T04:00:00.000Z"
+        }
+      ],
+      "email_addresses": [
+        {
+          "email": "test@keap.com",
+          "email_opt_status": "UNENGAGED_MARKETABLE",
+          "field": "EMAIL1",
+          "is_opt_in": true,
+          "opt_in_reason": "string"
+        },
+        {
+          "email": "test2@keap.com",
+          "email_opt_status": "UNENGAGED_MARKETABLE",
+          "field": "EMAIL2",
+          "is_opt_in": true,
+          "opt_in_reason": "string"
+        }
+      ],
+      "family_name": "last name",
+      "fax_numbers": [
+        {
+          "field": "FAX_NUMBER_FIELD_UNSPECIFIED",
+          "number": "string",
+          "type": "string"
+        }
+      ],
+      "given_name": "first name",
+      "id": "contact_id",
+      "job_title": "string",
+      "leadsource_id": "string",
+      "links": [
+        {
+          "id": "link id",
+          "link_type_id": "string",
+          "linked_contact_id": "string"
+        }
+      ],
+      "middle_name": "middle name",
+      "origin": {
+        "date": "string",
+        "ip_address": "string"
+      },
+      "owner_id": "string",
+      "phone_numbers": [
+        {
+          "extension": "phone extension",
+          "field": "PHONE1",
+          "number": "9876543210",
+          "type": "phone type"
+        },
+        {
+          "extension": "phone extension",
+          "field": "PHONE2",
+          "number": "12345678901",
+          "type": "phone type"
+        }
+      ],
+      "preferred_locale": "en_US",
+      "preferred_name": "string",
+      "prefix": "string",
+      "referral_code": "string",
+      "score_value": "string",
+      "social_accounts": [
+        {
+          "name": "social account name",
+          "type": "SOCIAL_ACCOUNT_TYPE_UNSPECIFIED"
+        }
+      ],
+      "source_type": "SOURCE_TYPE_UNSPECIFIED",
+      "spouse_name": "full name",
+      "suffix": "string",
+      "tag_ids": [
+        "188",
+        "402",
+        "333"
+      ],
+      "time_zone": "string",
+      "update_time": "2022-08-05T17:30:35.849Z",
+      "website": "string"
+    }
+  ],
+  "next_page_token": "string"
+}
