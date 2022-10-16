@@ -91,7 +91,7 @@ namespace AttributeJson
                         var strId = (int)ItemType.Object;
                         if (Values.TryGetValue(strId, out var listaStr))
                         {
-                            listaStr.Add(token.ToString());//o directamente hacer parse 
+                            listaStr.Add(token.ToString());
                             Values[strId] = listaStr;
                         }
                         else
