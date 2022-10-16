@@ -9,7 +9,8 @@ namespace AttributeJson
         enum ItemType
         {
             Array = 1,
-            Object= 2
+            Object= 2,
+            String =3,
         }
         static Dictionary<int, string> dic1 = new();
         static Dictionary<int, List<string>> Values  = new();
@@ -47,7 +48,7 @@ namespace AttributeJson
         {
             string json = ReadFile("value.json");
             JObject jsonDocument = JObject.Parse(json);
-            string val = "custom_fields";
+            string val = "content";
             
             Scannode(jsonDocument, jsonDocument, (node,parent,val) =>
             {
@@ -85,7 +86,22 @@ namespace AttributeJson
                             Values.TryAdd(objId, lista);
                         }
                     }
-                    var items= node.DescendantsAndSelf()
+                    else if (token.Type == JTokenType.String)
+                    {
+                        var strId = (int)ItemType.Object;
+                        if (Values.TryGetValue(strId, out var listaStr))
+                        {
+                            listaStr.Add(token.ToString());//o directamente hacer parse 
+                            Values[strId] = listaStr;
+                        }
+                        else
+                        {
+                            var lista = new List<string>();
+                            lista.Add(token.ToString());
+                            Values.TryAdd(strId, lista);
+                        }
+                    }
+                        var items= node.DescendantsAndSelf()
                    .OfType<JProperty>()
                    .Where(jp => jp.Value is JValue)
                    .Select(jp => jp.Path)
