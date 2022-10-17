@@ -88,7 +88,7 @@ namespace AttributeJson
                     }
                     else if (token.Type == JTokenType.String)
                     {
-                        var strId = (int)ItemType.Object;
+                        var strId = (int)ItemType.String;
                         if (Values.TryGetValue(strId, out var listaStr))
                         {
                             listaStr.Add(token.ToString());
